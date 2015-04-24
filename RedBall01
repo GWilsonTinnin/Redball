@@ -1,0 +1,45 @@
+<html> 
+ 
+<head> 
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script type = 'text/javascript'>
+function sayhelloworld(){
+  alert ('Do it again!');
+}
+</script>	
+<script type='text/javascript'>
+	function moveup() {	
+		redball.top=redball.top -20;
+	}
+</script>
+<script type='text/javascript'>
+	function movedown() {	
+		redball.top=redball.top +20;
+	}
+	function moveleft() {
+		redball.left=redball.left -20; 
+	}
+</script>
+<script type='text/javascript'>
+	function moveright() {	
+		redball.left=redball.left +20; 
+	}
+</script>
+</head> 
+<body>
+<button onclick="moveup()")>Move Up</button>
+<button onclick="movedown()")>Move Down</button>
+<button onclick="moveleft()")>Move Left</button>
+<button onclick="moveright()">Move Right</button> 
+<button onclick="sayhelloworld();">What's up?</button>
+<script type='text/javascript' src='http://lrn.icstars.org/redball1.js'></script>
+
+<img id='redball' style="height:50px; width:50px;"src="http://darron.net/wp-content/uploads/sites/6/2013/11/huge_red_ball.jpg"/>
+
+
+
+
+</body>
+
+</html> 
+ 
