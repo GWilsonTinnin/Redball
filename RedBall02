@@ -1,0 +1,102 @@
+<html> 
+ 
+<head> 
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script type = 'text/javascript'>
+function sayhelloworld(){
+  alert ('Do it again!');
+}
+</script>	
+<script type='text/javascript'>
+	function moveup() {	
+		redball.top=redball.top -30;
+	}
+	function movedown() {	
+		redball.top=redball.top +30;
+	}
+	function moveleft() {
+		redball.left=redball.left -30;
+	}
+	function moveright() {	
+		redball.left=redball.left +30;
+	}
+</script>
+<script type='text/javascript'>
+	function moveupleft() 
+		{
+		moveup();
+		moveleft();
+	}
+	function moveupright() 
+		{
+		moveup();
+		moveright();
+	}
+	function movedownleft() 
+		{
+		movedown(); 
+		moveleft(); 
+	}
+	function movedownright() 
+		{
+		movedown(); 
+		moveright(); 
+	}
+</script>
+<script type='text/javascript'>
+	function makeasquare(){ 
+			for (i=1; i<9; i++){
+				movedown();
+			}
+			for (i=1; i<9; i++){
+				moveright();
+			}
+			for (i=1; i<9; i++){
+				moveup();
+			}
+			for (i=1; i<9; i++){
+				moveleft();
+			}
+}
+	function makeatriangle(){
+		for (i=1; i< i++){ 
+			movedownleft();
+		}
+		for (i=1; i<9; i++){
+			moveright();
+		}
+		for (i=1; i<9; i++){
+			moveupleft();
+		}
+}
+</script>
+
+
+
+
+</script>
+</head>
+<body>
+<div style= "height 200px; width: 200px; background-color: blue; border-color: red; position: right;">
+<button onclick="moveup()")>Move Up</button>
+<button onclick="movedown()")>Move Down</button>
+<button onclick="moveleft()")>Move Left</button>
+<button onclick="moveright()">Move Right</button> 
+<button onclick="moveupleft()">Move Up Left </button>
+<button onclick="moveupright()">Move Up Right</button> 
+<button onclick="movedownleft()">Move Down Left</button>
+<button onclick="movedownright()">Move Down Right</button>
+<button onclick="makeasquare()">Make A Square</button>
+<button onclick="makeatriangle()">Make A Triangle</button>
+<button onclick="sayhelloworld();">What's up?</button>
+</div>
+<script type='text/javascript' src='http://lrn.icstars.org/redball1.js'></script>
+
+<img id='redball' style="height:20px; width:20px;"src="http://darron.net/wp-content/uploads/sites/6/2013/11/huge_red_ball.jpg"/>
+
+
+
+
+</body>
+
+</html> 
