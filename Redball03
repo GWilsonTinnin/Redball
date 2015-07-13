@@ -1,26 +1,4 @@
-<html> 
- 
-<head> 
 
-<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
-<script type = 'text/javascript'>
-
-
-function sayhelloworld(){
-  alert ('Do it again!');
-}
-</script>	
-<script type='text/javascript'>
-	function moveup() {	
-		redball.top=redball.top -30;
-	}
-	function movedown() {	
-		redball.top=redball.top +30;
-	}
-	function moveleft() {
-		redball.left=redball.left -30;
-	}
-	function moveright() {	
 		redball.left=redball.left +30;
 	}
 	
