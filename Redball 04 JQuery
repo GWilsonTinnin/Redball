@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+#redball{
+position: absolute;
+left: 90px;
+top: 100px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script>
+function moveright(){
+  var elem = $("#redball");
+  var pos = elem.offset();
+  pos.left = pos.left + 20;
+  elem.css({ top: pos.top+'px', left: pos.left+'px' });
+}
+function stretch(){
+	var elem = $("#poof");
+	elem.css("font-size","25px");
+}
+function fadeout(){
+	var elem = $("#poof");
+	elem.fadeOut();
+}
+function grow(){
+	var elem = $("#poof");
+	var size = 
+	elem.css("font-size","+=25");
+}
+function fadein(){
+	var elem = $("#poof");
+	elem.fadeIn();
+}
+function colorChange() {
+	var elem = $("#poof"); 
+	elem.css("color", "red");
+}
+function fontChange(){
+	var elem = $("#poof");
+	elem.css = ("font-family", "Verdana")
+}
+</script>
+<script> 
+function growBall() {
+	$("#redball").height("+=10");
+	$("#redball").width("+=10");
+}
+</script> 
+</head>
+<body>
+<p id="poof">~Poof~</p>
+<img id='redball' src='http://www.icstars.org/files/redball.jpg'/>
+<button onclick="moveright();">move right</button>
+<button onclick="grow();">grow</button>
+<button onclick="fadeout();">fade out</button>
+<button onclick="fadein();">fade in</button>
+<button onclick="resetEverything();">RESET</button>
+<button onclick="growBall()";>Grow Ball</button>
+<button onclick="colorChange();">Give me RED</button>
+</body>
+</html>
